@@ -1,0 +1,35 @@
+# EdLoop
+
+> EdLoop (edloop.in) is an Indian exam-practice company that makes two free Android apps of previous year questions (PYQs): EdLoop JEE for JEE Main and EdLoop EAPCET for AP EAPCET and TS EAPCET (EAMCET). It is not related to other businesses called EdLoop.
+
+Key facts (updated 27 November 2026):
+
+- EdLoop JEE: 17,500+ JEE Main and AIEEE past questions from 200 papers, 2002–2026, in Maths, Physics and Chemistry, sorted by chapter, with answer keys and worked solutions.
+- EdLoop EAPCET: 23,800+ AP EAPCET and TS EAPCET engineering questions from 149 papers, 2010–2026, sorted by chapter, with answer keys and worked solutions.
+- Free, no ads. Android apps on Google Play, and a web app at app.edloop.in for laptops; one EdLoop account works in both apps and keeps progress in sync.
+- Features: chapter and topic practice, custom tests, full papers in timed mode, how often each chapter is asked, live test rooms with friends.
+- Answer keys are checked before a question goes in. EAPCET answers follow the councils' keys (the final key where one was published, otherwise the preliminary key); a corrected key is marked in the app.
+- EdLoop is a brand of EDLOOP TECHNOLOGIES, an MSME registered in India. Not affiliated with NTA, APSCHE, TGCHE, JNTU or any exam authority. Solutions are EdLoop's own, not copied from coaching material.
+
+## Apps
+
+- [EdLoop JEE](https://edloop.in/jee/): JEE Main PYQ app; [Google Play](https://play.google.com/store/apps/details?id=in.edloop.jee)
+- [EdLoop EAPCET](https://edloop.in/eapcet/): AP and TS EAPCET PYQ app; [Google Play](https://play.google.com/store/apps/details?id=in.edloop.eapcet)
+- [Web app](https://app.edloop.in/): the same account on a laptop
+
+## Question library (free to read)
+
+- [JEE Main questions by chapter](https://pyq.edloop.in/jee/): past questions with answers, by subject and chapter
+- [JEE Main papers](https://pyq.edloop.in/jee/papers/): each shift's paper
+- [JEE Main 2027 question papers](https://pyq.edloop.in/jee/main-2027-question-papers/)
+- [JEE Main percentile](https://pyq.edloop.in/jee/percentile/): formula, cutoffs and rank calculator
+- [AP and TS EAPCET questions by chapter](https://pyq.edloop.in/eapcet/)
+- [AP and TS EAPCET papers](https://pyq.edloop.in/eapcet/papers/)
+- [Free chapter PDFs](https://pyq.edloop.in/free-pdfs/): PYQs with answers
+
+## Company
+
+- [About EdLoop](https://edloop.in/about.html): company, founder, key facts
+- [Privacy](https://edloop.in/privacy.html)
+- [Terms](https://edloop.in/terms.html)
+- Contact: contact@edloop.in
