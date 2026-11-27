@@ -1,4 +1,4 @@
-/* Shared pieces kept from home.css: the font, the eo logo animation and the interactive question card. */
+/* Shared pieces: the font, the eo logo animation and the interactive question card. */
 @font-face{font-family:Manrope;src:url('assets/site-redesign/manrope-latin.woff2') format('woff2');font-style:normal;font-weight:200 800;font-display:swap}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip-link{position:fixed;top:12px;left:12px;transform:translateY(-160%);z-index:100;background:var(--ink);color:white;padding:12px 20px}
@@ -68,7 +68,7 @@
   .js .eo-wait .eo-ed,.js .eo-wait .eo-loop{opacity:1}
 }
 /* ---------------------------------------------------------------------------------------------------------------
-   EdLoop premium home (index.html only; the inner pages keep home.css).
+   EdLoop premium home and app pages (the inner pages add pages.css).
    Concept: a showroom for twenty-five years of papers. Dark and light bands alternate like a car maker's site; type
    is one family (Manrope) set light (200-300) and large, so weight, not colour, carries emphasis. Buttons are thin
    rectangles. The one bold moment is the pinned "since 2002" sequence: a thin year counts up as the chapter grid

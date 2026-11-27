@@ -36,7 +36,6 @@ step, no framework, no cookies; Cloudflare Web Analytics (cookieless) on the EdL
 | `tools/encode_film.py` | Makes the web copies of the film and its posters from the full-resolution masters |
 | `assets/` | Brand files (with the two app icons `icon-jee.webp`, `icon-eapcet.webp` and EdLoop EAPCET's link-preview card `social-eapcet.png`), EdLoop JEE's screens (`site-redesign/`), EdLoop EAPCET's screens (`eapcet/`), the film (`video/`), the founder photo (`team/`) |
 
-Not used by any page any more, kept until a clean-up commit: `home.css`.
 
 ## The film
 
