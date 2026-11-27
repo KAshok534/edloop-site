@@ -2,13 +2,14 @@
 
 > EdLoop (edloop.in) is an Indian exam-practice company that makes two free Android apps of previous year questions (PYQs): EdLoop JEE for JEE Main and EdLoop EAPCET for AP EAPCET and TS EAPCET (EAMCET). It is not related to other businesses called EdLoop.
 
-Key facts (updated 27 November 2026):
+Key facts (updated 28 November 2026):
 
 - EdLoop JEE: 17,500+ JEE Main and AIEEE past questions from 200 papers, 2002–2026, in Maths, Physics and Chemistry, sorted by chapter, with answer keys and worked solutions.
 - EdLoop EAPCET: 23,800+ AP EAPCET and TS EAPCET engineering questions from 149 papers, 2010–2026, sorted by chapter, with answer keys and worked solutions.
 - Free, no ads. Android apps on Google Play, and a web app at app.edloop.in for laptops; one EdLoop account works in both apps and keeps progress in sync.
 - Features: chapter and topic practice, custom tests, full papers in timed mode, how often each chapter is asked, live test rooms with friends.
 - Answer keys are checked before a question goes in. EAPCET answers follow the councils' keys (the final key where one was published, otherwise the preliminary key); a corrected key is marked in the app.
+- EdLoop has three parts: EdLoop Learn (the exam-practice apps above, live), EdLoop Campus (tools for colleges, in development) and EdLoop AI (inside the apps: tags questions by chapter and recurring pattern, and drafts worked solutions that are then checked).
 - EdLoop is a brand of EDLOOP TECHNOLOGIES, an MSME registered in India. Not affiliated with NTA, APSCHE, TGCHE, JNTU or any exam authority. Solutions are EdLoop's own, not copied from coaching material.
 
 ## Apps
