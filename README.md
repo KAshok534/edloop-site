@@ -7,7 +7,7 @@ at `/jee/`, EdLoop EAPCET at `/eapcet/`), the About page, the privacy policy, th
 `/get` install link and the share pages that the apps' room, friend, challenge and question links open.
 
 Static HTML, CSS and JavaScript, served by GitHub Pages from `main` (`CNAME` = edloop.in, `.nojekyll`). There is no build
-step, no framework, no analytics and no cookies. **Pushing `main` publishes the site within about a minute.**
+step, no framework, no cookies; Cloudflare Web Analytics (cookieless) on the EdLoop pages. **Pushing `main` publishes the site within about a minute.**
 
 ## Pages
 
@@ -15,9 +15,10 @@ step, no framework, no analytics and no cookies. **Pushing `main` publishes the 
 |---|---|---|
 | `/` | `index.html` | The EdLoop home: "Real past papers, sorted by chapter", the two apps' phones, "Pick your exam" (EdLoop JEE and EdLoop EAPCET cards with their numbers and marking, EdLoop Campus coming soon), "One account, every app", "Every answer has a source", the end card. A small script sends links to the old home sections (`/#watch`, `#together`, `#inside`, `#practice`, used in bios and posts until October 2026) to the same section of `/jee/` |
 | `/jee/` | `jee/index.html` | EdLoop JEE: hero, the 30-second film, the numbers, the "Twenty-five years of papers" year sequence, "Better with friends", the app gallery, a real past question to try (+4 / −1), "Every answer has a source", a link to EdLoop EAPCET, the end card |
-| `/eapcet/` | `eapcet/index.html` | EdLoop EAPCET, the same sections in teal: three app screens and the numbers, the 2022–2026 year sequence (AP and TS), "AP and TS in one app" (the paper, the marking), eight app screens, three real 2026 questions with the councils' keys (+1 / 0), "Every answer has a source", a link to EdLoop JEE |
+| `/eapcet/` | `eapcet/index.html` | EdLoop EAPCET, the same sections in teal: three app screens and the numbers, the 2010–2026 year sequence (AP and TS), "AP and TS in one app" (the paper, the marking), eight app screens, three real 2026 questions with the councils' keys (+1 / 0), "Every answer has a source", a link to EdLoop JEE |
 | `/about.html` | `about.html` | The company and the founder |
 | `/privacy.html`, `/terms.html`, `/delete-account.html` | same | Privacy policy, terms of service, how to delete an account (linked from Google Play) |
+| `/folio/`, `/folio/privacy.html` | `folio/index.html`, `folio/privacy.html` | Folio, a separate personal health-journal app’s page and privacy policy; hosted here, not part of EdLoop. |
 | `/get/` | `get/index.html` | One install link for bios, QR codes and flyers. Forwards to Google Play, carrying `utm_*` and the app's install-referrer keys (`room`, `friend`, `challenge`, `question`) |
 | `/r/<code>`, `/f/<id>`, `/c/<code>`, `/q/<question id>` | `404.html` | Share pages. GitHub Pages serves `404.html` for any unknown path; its script reads the path and shows the room, friend, challenge or question page. On Android it goes on to Google Play once per tab; when the app is installed, Android opens the link in the app instead (`.well-known/assetlinks.json`) Two apps share these links: EdLoop EAPCET adds `?app=eapcet` to the room, friend and challenge links it shares, and its question ids start `q-apeapcet-` or `q-tseapcet-`; those pages name EAPCET and open or install EdLoop EAPCET. Links without the tag belong to EdLoop JEE. |
 
@@ -25,9 +26,9 @@ step, no framework, no analytics and no cookies. **Pushing `main` publishes the 
 
 | File | Role |
 |---|---|
-| `premium.css` | The design system, loaded by every page: colour tokens, the Manrope font (self-hosted), header, footer, buttons, the app-page sections, the eo logo animation, the question card; at the end, the home's app cards and EdLoop EAPCET's teal (`.app-eapcet`) |
-| `pages.css` | The inner pages (About, the legal pages, `/get`, the share pages) |
-| `premium.js` | Header state on every page; on the app pages the film player (files found from the page's folder: `<html data-base="../">`), the year sequence (the exam's name and the notes come from the page's `years-data` JSON, JEE's by default), the sticky phone and the gallery |
+| `premium.css` | The design system, loaded by the site pages and share template: colour tokens, the Manrope font (self-hosted), header, footer, buttons, the app-page sections, the eo logo animation, the question card; at the end, the home's app cards and EdLoop EAPCET's teal (`.app-eapcet`) |
+| `pages.css` | The inner pages (About, the legal pages, Folio, `/get`, the share pages) |
+| `premium.js` | Header state on pages with the shared navigation; on the app pages the film player (files found from the page's folder: `<html data-base="../">`), the year sequence (the exam's name and the notes come from the page's `years-data` JSON, JEE's by default), the sticky phone and the gallery |
 | `site.js` | Mobile menu, logo replay, and the Play-link routing used while `playLive` is false |
 | `home.js` | The app pages' interactive question (JEE's questions by default; a page can give its own in a `#demo-data` JSON and its marking in `data-right` / `data-wrong` on `.practice-demo`) and the phone install bar |
 | `config.js` | Site switches: `playLive` (EdLoop JEE's Google Play buttons go straight to the listing when true) and `eapcetLive` (EdLoop EAPCET's Play link shows, and its share pages forward to its listing, when true; false shows "in Google's final review") |
@@ -90,5 +91,7 @@ rendered with `assets/brand/render_cards.py`; EdLoop EAPCET's card is its Play f
 the bodies that set them. EdLoop is independent of NTA, APSCHE, TGCHE and JNTU.
 
 ## Chapter guides and question pages
+
+The exam pages link to their library hubs, and About and `llms.txt` link to the public library.
 
 Moved to pyq.edloop.in (2026-11-24). Its source, the guide tools and the old page generators are in the private repository.
